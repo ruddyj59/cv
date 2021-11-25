@@ -36,7 +36,12 @@
     </header>
       <!-- profil -->
     <div class="profil">
-      <img src="img/ruddy2.jpg" alt="">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/ruddy.jpg">
+        <source media="(max-width: 767px)" srcset="img/ruddy2.jpg">
+          <img src="img/ruddy2.jpg" alt="photo de profil">
+      </picture>
+      <!-- <img src="img/ruddy2.jpg" alt=""> -->
       <div class="texte">
         <h1>Jaros Ruddy</h1>
         <p>Intégrateur web junior</p>
@@ -76,7 +81,7 @@
       </a>
     </div>
       <!-- competence -->
-    <div class="competence">
+    <div class="competence" id="competence">
     <h2>competences</h2>
     <div class="lien">
       <i class="fab fa-html5 fa-5x"></i>
@@ -90,7 +95,7 @@
       <li>Autonomie</li>
     </ul>
       <!-- exp -->
-    </div>
+    </div id="Expériences">
     <h2>experience</h2>
     <div class="timeline">
       <!-- exp1 -->

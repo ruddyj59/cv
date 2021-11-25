@@ -382,7 +382,7 @@ h2 {
   color: #8a9898;
   font-size: 1.5rem;
   font-weight: 600;
-  background:  #ffffff;
+  background:  #2803f49c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -612,8 +612,15 @@ h2 {
 .profil{
 display: flex;
 }
+.profil picture{
+  display: flex;
+  width: 25%
+}
 .profil img{
-  width: 25%;
+  width: 100%;
+  border-radius: 0;
+  margin: 0;
+  object-fit: cover;
 }
 .texte{
   display: flex;
