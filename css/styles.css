@@ -397,7 +397,7 @@ h2 {
   padding: 20px;
   align-self: center;
   margin: 0 20px;
-  background: black;
+  background: #00f1ffb5;
   border-radius: 100%;
   width: 40px;
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
@@ -520,7 +520,7 @@ h2 {
     background-size: contain;
   }
   .timeline__event--type4 .timeline__event__icon {
-    background:black;
+    background:#7f525e;
     background-image: url("../img/logo-pocheco.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -607,4 +607,22 @@ h2 {
   100% {
     left: 100%;
   }
+}
+@media (min-width:768px) {
+.profil{
+display: flex;
+}
+.profil img{
+  width: 25%;
+}
+.texte{
+  display: flex;
+  width: 55%;
+}
+.reseaux{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px;
+}
 }
