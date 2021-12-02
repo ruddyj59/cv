@@ -35,7 +35,7 @@ body {
   position: relative;
 }
 .nav,.profil,.presentation{
-  max-width: 1080px;
+  max-width: 1280px;
   margin: auto;
   padding: 0 2%;
 }
@@ -145,15 +145,26 @@ font-family: "Roboto-Condensed";
   text-transform: uppercase;
   padding: 10px;
 }
-.compruddy{
+.soft{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  list-style-type: none;
   padding: 20px;
   box-sizing: border-box;
   font-family: "Roboto-Condensed";
   font-size: 20px;
   color:#0b486b;
+}
+.hard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: large;
+  flex-wrap: wrap;
 }
 .lien{
   font-size: 20px;
@@ -238,8 +249,8 @@ span{
 * {
   box-sizing: border-box;
 }
-body {
-  color: #525f7f;
+.fieldset {
+  color: #ffffff;
 }
 h2 {
   margin: 5%;
@@ -465,6 +476,10 @@ h2 {
     width: 100%;
     margin: 0;
     box-shadow: none;
+    background-image: url(../img/logo-ageval.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   .timeline__event__icon:before, .timeline__event__icon:after {
     display: none;
@@ -582,14 +597,14 @@ h2 {
   }
 }
 /* format tablette */
-@media screen and (min-width:768px) {
 
-   .profil img{
-  padding: 0;
+@media screen and (min-width:768px) {
+  .profil img{
+    padding: 0;
   }
   .profil{
-  display: flex;
-  padding: 2%
+    display: flex;
+    padding: 2%
   }
   .profil picture{
     display: flex;
@@ -611,8 +626,12 @@ h2 {
     flex-direction: column;
     border-radius: 0px;
   }
+  h1,h2,h3,h4,h5,h6{
+    font-size: 3rem;
+  }
 }
 
+/* test-card */
 .card-view,
 .card,
 .face {
@@ -630,12 +649,13 @@ h2 {
   text-align: center;
 }
 .card-view .card .face {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   backface-visibility: hidden;
 }
 .card-view .card .face:first-of-type {
+  position: absolute;
   z-index: 2;
 }
 .card-view .card .face:nth-of-type(2) {
@@ -644,53 +664,39 @@ h2 {
 .card-view:hover .card {
   transform: rotateY(180deg);
 }
-#hard:checked ~ .card-view > .card {
+#toggle:checked ~ .card-view > .card {
   transform: rotateY(180deg);
 }
-#hard:checked ~ .card-view > .card:hover {
+#toggle:checked ~ .card-view > .card:hover {
   transform: rotateY(0deg);
+  font-size: 50px
 }
-
-
-
-
-
-
-
-
-
-
-
+/* switch */
 .skills-switcher {
 	text-align: center;
 }
-
 .skills-switcher .fieldset {
 	display: inline-block;
 	position: relative;
 	padding: 2px;
 	border-radius: 50em;
 	border: 2px solid #2d3e50;
+  background-color: #0b486b;
 }
-
-.skills-switcher input[type="radio"] {
+.skills-switcher input[type="checkbox"] {
 	position: absolute;
 	opacity: 0;
 }
-
 .skills-switcher label {
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	float: left;
 	width: 90px;
 	height: 40px;
 	line-height: 40px;
 	cursor: pointer;
 	font-size: 1.4rem;
-	color: #ffffff;
 }
-
 .skills-switcher .switch {
 	position: absolute;
 	top: 2px;
@@ -703,12 +709,13 @@ h2 {
 	-moz-transition: -moz-transform 0.5s;
 	transition: transform 0.5s;
 }
-
-.skills-switcher input[type="radio"]:checked + label + .switch,
-.skills-switcher input[type="radio"]:checked + label:nth-of-type(n) + .switch {
-	-webkit-transform: translateX(90px);
-	-moz-transform: translateX(90px);
-	-ms-transform: translateX(90px);
-	-o-transform: translateX(90px);
-	transform: translateX(90px);
+#toggle {
+  display: none;
+}
+.hard li img{
+  height: 90px;
+}
+.hard{
+  max-width: 1280px;
+  margin: auto;
 }

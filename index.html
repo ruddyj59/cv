@@ -85,20 +85,40 @@
   <!-- competence -->
   <div class="competence" id="competence">
     <h2>competences</h2>
-    <div class="lien">
-      <i class="fab fa-html5 fa-5x"></i>
-      <i class="fab fa-css3-alt fa-5x"></i>
-    </div>
-    <ul class="compruddy">
-      <li>Travail en équipe</li>
-      <li>Capacité à s'adapter</li>
-      <li>ouverture a la nouveauté</li>
-      <li>Communication oral</li>
-      <li>Autonomie</li>
-    </ul>
-    <!-- exp -->
+    <!--switch-card -->
+      <div class="skills-switcher">
+        <input class="fieldset" id="toggle" type="checkbox"/>
+        <label class="fieldset" id="toggle-label" for="toggle">Soft Skills</label>
+        <label class="fieldset" id="toggle-label" for="toggle">Hard Skills</label>
+        <div class="card-view">
+          <div class="card">
+            <div class="face">
+              <ul class="soft">
+                <li>Travail en équipe</li>
+                <li>Capacité à s'adapter</li>
+                <li>ouverture a la nouveauté</li>
+                <li>Communication oral</li>
+                <li>Autonomie</li>
+              </ul>
+            </div>
+
+            <div class="face">
+              <ul class="hard">
+                <li><i class="fab fa-html5 fa-5x"></i></li>
+                <li><i class="fab fa-css3-alt fa-5x"></i></li>
+                <li>
+                  <img src="img/responsive.png" alt="">
+                </li>
+                <li>
+                  <img src="img/adobe-photoshop.png" alt="">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
   </div>
-  <!-- e  <i class="fab fa-html5 fa-5x"></i> -->
   <div class="timeline" id="experience">
     <h2>experience</h2>
     <!-- exp1 -->
@@ -229,45 +249,5 @@
   <div class="formation" id="formation">
 
   </div>
-
-
-
-
-
-  <div class="skills-switcher">
-		<p class="fieldset">
-			<input type="radio" name="duration-1" value="soft skills" id="soft" checked>
-			<label for="soft">Soft Skills</label>
-			<input type="radio" name="duration-1" value="hard skills" id="hard">
-			<label for="hard">Hard Skills</label>
-			<span class="switch"></span>
-      <div class="card-view">
-        <div class="card">
-          <div class="face">
-            <ul class="compruddy">
-              <li>Travail en équipe</li>
-              <li>Capacité à s'adapter</li>
-              <li>ouverture a la nouveauté</li>
-              <li>Communication oral</li>
-              <li>Autonomie</li>
-            </ul>
-          </div>
-          <div class="face">
-            <ul class="compruddy">
-              <li>dipguig en équipe</li>
-              <li>lfkgjfigo</li>
-              <li>ouverture a la nouveauté</li>
-              <li>Communication oral</li>
-              <li>Autonomie</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-		</p>
-
-
-  </div>
-
-
 </body>
 </html>
