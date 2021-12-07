@@ -328,7 +328,6 @@ h2 {
 }
 
 .timeline__event__date {
-  color: #f6a4ec;
   font-size: 1.5rem;
   font-weight: 600;
   background: #9251ac;
@@ -337,6 +336,9 @@ h2 {
   justify-content: center;
   padding: 0 20px;
   border-radius: 6px 0 0 6px;
+  font-family: 'Roboto-Condensed';
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .timeline__event__icon {
   display: flex;
@@ -390,7 +392,9 @@ h2 {
   background: #555ac0;
 }
 .timeline__event--type2 .timeline__event__date {
-  color: #87bbfe;
+  font-family: 'Roboto-Condensed';
+  text-transform: uppercase;
+  color: #ffffff;
   background: #555ac0;
 }
 .timeline__event--type2:nth-child(2n+1) .timeline__event__icon:before, .timeline__event--type2:nth-child(2n+1) .timeline__event__icon:after {
@@ -410,7 +414,9 @@ h2 {
   background: #24b47e;
 }
 .timeline__event--type3 .timeline__event__date {
-  color: #aff1b6;
+  font-family: 'Roboto-Condensed';
+  text-transform: uppercase;
+  color: #ffffff;
   background-color: #24b47e;
 }
 .timeline__event--type3:nth-child(2n+1) .timeline__event__icon:before, .timeline__event--type3:nth-child(2n+1) .timeline__event__icon:after {
@@ -528,6 +534,7 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: #aff1b6;
 
   }
   .timeline__event--type .timeline__event__icon {
@@ -535,6 +542,7 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color:#f6a4ec;
   }
   .timeline__event--type4 .timeline__event__icon {
     background-image: url("../img/logo-pocheco.png");
@@ -547,6 +555,7 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: #87bbfe;
   }
   .nav > .nav-btn {
     display: inline-block;
@@ -628,6 +637,17 @@ h2 {
   }
   h1,h2,h3,h4,h5,h6{
     font-size: 3rem;
+  }
+  .timeline__event:nth-child(2n+1) .timeline__event__icon:before, .timeline__event__icon:before {
+  height: 300%;}
+
+
+}
+
+/* format ecran */
+@media screen and (min-width:1280px) {
+  .timeline__event:nth-child(2n+1) .timeline__event__icon:before, .timeline__event__icon:before {
+  height: 200%;
   }
 }
 
@@ -718,4 +738,41 @@ h2 {
 .hard{
   max-width: 1280px;
   margin: auto;
+}
+.timeline__event__date5 {
+background: #555ac0;
+color: #ffffff;
+font-size: 1.5rem;
+font-weight: 600;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Roboto-Condensed';
+text-transform: uppercase;
+padding: 20px;
+}
+
+.timeline__event__date6{
+  background: #24b47e;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto-Condensed';
+  text-transform: uppercase;
+  padding: 20px;
+}
+.timeline__event__date0{
+    background: #9251ac;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto-Condensed';
+    text-transform: uppercase;
+    padding: 20px;
 }
