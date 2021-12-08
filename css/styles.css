@@ -464,191 +464,6 @@ h2 {
     left: 100%;
   }
 }
-/* format mobile */
-@media screen and (max-width:767px) {
-  .timeline__event {
-    width: 90vw;
-  }
-  .timeline__event {
-    flex-direction: column;
-    align-self: center;
-  }
-  .timeline__event__content {
-    width: 100%;
-  }
-  .timeline__event__icon {
-    border-radius: 6px 6px 0 0;
-    width: 100%;
-    margin: 0;
-    box-shadow: none;
-    background-image: url(../img/logo-ageval.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-  .timeline__event__icon:before, .timeline__event__icon:after {
-    display: none;
-  }
-  .timeline__event__date {
-    border-radius: 0;
-    padding: 20px;
-  }
-  .timeline__event:nth-child(2n+1) {
-    flex-direction: column;
-    align-self: center;
-  }
-  .timeline__event:nth-child(2n+1) .timeline__event__date {
-    border-radius: 0;
-    padding: 20px;
-  }
-  .timeline__event:nth-child(2n+1) .timeline__event__icon {
-    border-radius: 6px 6px 0 0;
-    margin: 0;
-  }
-  .timeline__event:nth-child(0n+1) .timeline__event__icon {
-    margin: 0;
-    background-image: url("../img/logo-ageval.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .timeline__event--type2 .timeline__event__icon {
-    background: #87bbfe;
-    color: #555ac0;
-    background-image: url("../img/logo-log.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .timeline__event--type3 .timeline__event__icon {
-    background-image: url("../img/logo-bapaume.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .timeline__event--type6 .timeline__event__icon {
-    background-image: url("../img/logo-lidl.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #aff1b6;
-
-  }
-  .timeline__event--type .timeline__event__icon {
-    background-image: url("../img/logo-sima.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color:#f6a4ec;
-  }
-  .timeline__event--type4 .timeline__event__icon {
-    background-image: url("../img/logo-pocheco.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .timeline__event--type5 .timeline__event__icon {
-    background-image: url("../img/logo-nicols.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #87bbfe;
-  }
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #0b486b;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    /* overflow-y: auto; */
-  }
-  .nav > #nav-check:checked ~ .nav-links:active{
-    height:0px
-  }
-}
-/* format tablette */
-
-@media screen and (min-width:768px) {
-  .profil img{
-    padding: 0;
-  }
-  .profil{
-    display: flex;
-    padding: 2%
-  }
-  .profil picture{
-    display: flex;
-    width: 25%
-  }
-  .profil img{
-    width: 100%;
-    border-radius: 0;
-    margin: 0;
-    object-fit: cover;
-  }
-  .texte{
-    display: flex;
-    width: 55%;
-  }
-  .reseaux{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0px;
-  }
-  h1,h2,h3,h4,h5,h6{
-    font-size: 3rem;
-  }
-  .timeline__event:nth-child(2n+1) .timeline__event__icon:before, .timeline__event__icon:before {
-  height: 300%;}
-
-
-}
-
-/* format ecran */
-@media screen and (min-width:1280px) {
-  .timeline__event:nth-child(2n+1) .timeline__event__icon:before, .timeline__event__icon:before {
-  height: 200%;
-  }
-}
 
 /* test-card */
 .card-view,
@@ -776,12 +591,13 @@ padding: 20px;
     padding: 20px;
 }
 .scrolling-wrapper-flexbox {
-  display: flex;
-  flex-wrap: nowrap;
-  max-width: 1200px;
- margin: 40px 0;
-  overflow-x: auto;
-   -webkit-overflow-scrolling: touch;
+display: flex;
+flex-wrap: nowrap;
+max-width: 1200px;
+margin: 40px 0;
+overflow-x: auto;
+-webkit-overflow-scrolling: touch;
+margin: auto;
 }
 
 .scrolling-wrapper-flexbox .card {
@@ -874,20 +690,22 @@ margin:0 auto}
 
 
 .contenu_carou {
-width: 500px;
+width: 100%;
 height: 332px;
 margin: 2rem auto;
-perspective: 1000px}
+perspective: 1000px;
+overflow-x: hidden;
+  }
 
 
 .caroussel {
 position: relative;
 transform-style: preserve-3d;
-width: 500px;
+width: 100%;
 height: 332px;
 transition: 1s transform}
 
-.caroussel div img {
+.caroussel img {
 position: absolute;
 top: 0;
 left: 0;
@@ -1061,3 +879,194 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
 	transform:rotateY(315deg) translateZ(540px) scale(1)
 
 	}
+
+
+
+  /* format mobile */
+  @media screen and (max-width:767px) {
+    .timeline__event {
+      width: 90vw;
+    }
+    .timeline__event {
+      flex-direction: column;
+      align-self: center;
+    }
+    .timeline__event__content {
+      width: 100%;
+    }
+    .timeline__event__icon {
+      border-radius: 6px 6px 0 0;
+      width: 100%;
+      margin: 0;
+      box-shadow: none;
+      background-image: url(../img/logo-ageval.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    .timeline__event__icon:before, .timeline__event__icon:after {
+      display: none;
+    }
+    .timeline__event__date {
+      border-radius: 0;
+      padding: 20px;
+    }
+    .timeline__event:nth-child(2n+1) {
+      flex-direction: column;
+      align-self: center;
+    }
+    .timeline__event:nth-child(2n+1) .timeline__event__date {
+      border-radius: 0;
+      padding: 20px;
+    }
+    .timeline__event:nth-child(2n+1) .timeline__event__icon {
+      border-radius: 6px 6px 0 0;
+      margin: 0;
+    }
+    .timeline__event:nth-child(0n+1) .timeline__event__icon {
+      margin: 0;
+      background-image: url("../img/logo-ageval.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .timeline__event--type2 .timeline__event__icon {
+      background: #87bbfe;
+      color: #555ac0;
+      background-image: url("../img/logo-log.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .timeline__event--type3 .timeline__event__icon {
+      background-image: url("../img/logo-bapaume.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .timeline__event--type6 .timeline__event__icon {
+      background-image: url("../img/logo-lidl.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: #aff1b6;
+
+    }
+    .timeline__event--type .timeline__event__icon {
+      background-image: url("../img/logo-sima.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color:#f6a4ec;
+    }
+    .timeline__event--type4 .timeline__event__icon {
+      background-image: url("../img/logo-pocheco.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .timeline__event--type5 .timeline__event__icon {
+      background-image: url("../img/logo-nicols.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: #87bbfe;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #0b486b;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      /* overflow-y: auto; */
+    }
+    .nav > #nav-check:checked ~ .nav-links:active{
+      height:0px
+    }
+  }
+  /* format tablette */
+  @media screen and (min-width:768px) {
+    .contenu_carou {
+      width: 500px;
+      overflow-x: inherit;
+      }
+    .caroussel {
+      width: 500px;
+    }
+    .profil img{
+      padding: 0;
+    }
+    .profil{
+      display: flex;
+      padding: 2%
+    }
+    .profil picture{
+      display: flex;
+      width: 25%
+    }
+    .profil img{
+      width: 100%;
+      border-radius: 0;
+      margin: 0;
+      object-fit: cover;
+    }
+    .texte{
+      display: flex;
+      width: 55%;
+    }
+    .reseaux{
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      border-radius: 0px;
+    }
+    h1,h2,h3,h4,h5,h6{
+      font-size: 3rem;
+    }
+    .timeline__event:nth-child(2n+1) .timeline__event__icon:before, .timeline__event__icon:before {
+    height: 300%;}
+  }
+  /* format ecran */
+  @media screen and (min-width:1280px) {
+    .timeline__event:nth-child(2n+1) .timeline__event__icon:before, .timeline__event__icon:before {
+    height: 200%;
+    }
+  }
