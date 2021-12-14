@@ -761,12 +761,12 @@ transform:rotateY(315deg) translateZ(540px) scale(.8)
 
 .caroussel_diapo input[type=radio] + label {
 cursor: pointer;
-background-color: #0b486b;
+border:2px solid #0b486b;
 display: inline-block;
-width: 30px;
+width: 25px;
 border-radius: 50%;
-height: 30px;
-margin: 5px;
+height: 25px;
+margin: 4px;
 }
 
 .caroussel_diapo input[type=radio]:checked + label{
