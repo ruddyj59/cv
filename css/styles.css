@@ -5,6 +5,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 h1,h2,h3,h4,h5,h6{
   font-family: "Roboto-Condensed";
@@ -80,7 +81,7 @@ padding: 20px;
 }
 
 .profilParent{
-  background-image: url("https://cdn.pixabay.com/photo/2020/02/15/14/19/network-4851079_960_720.webp");
+  background-image: url("../img/background.webp");
   background-repeat: no-repeat;
   background-size:cover;
   text-align: -webkit-center;
@@ -118,7 +119,7 @@ color: white;
 .presentation{
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 50px 10px;
   font-family: "Roboto-Condensed";
   color:  #0b486b;
   text-align: center;
@@ -140,8 +141,7 @@ font-family: "Roboto-Condensed";
 .competence{
   outline: inherit;
   margin: 25px 0px;
-  padding: 10px
-  15px;
+  padding: 50px 10px;
   font-family: "Roboto-Condensed";
   background-color:#0b486b;
   }
@@ -259,7 +259,7 @@ span{
   color: #ffffff;
 }
 h2 {
-  margin: 5%;
+  /* margin: 5%; */
   text-align: center;
   font-size: 2rem;
   font-weight: 100;
@@ -269,7 +269,7 @@ h2 {
 .timeline {
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
+  padding: 50px 10px;
   position: relative;
 }
 .timeline__event {
@@ -664,6 +664,7 @@ margin: auto;
   display: none;
 }
 .formation{
+  padding: 50px 10px;
   background-color: #0b486b;
 }
 .formation h2{
@@ -688,7 +689,7 @@ margin:0 auto}
 
 .contenu_carou {
 width: 100%;
-height: 332px;
+height: 500px;
 margin: 2rem auto;
 perspective: 1000px;
 overflow-x: hidden;
@@ -699,7 +700,7 @@ overflow-x: hidden;
 position: relative;
 transform-style: preserve-3d;
 width: 100%;
-height: 332px;
+height: 500px;
 transition: 1s transform}
 
 .caroussel img {
@@ -713,49 +714,49 @@ transition: 1s transform;
 }
 
 
-.caroussel div:nth-child(1){
+.caroussel img:nth-child(1){
 
 	transform:translate3d(0,0,540px) scale(.8)
 
 	}
 
-.caroussel div:nth-child(2){
+.caroussel img:nth-child(2){
 
 	transform:rotateY(45deg) translateZ(540px) scale(.8)
 
 	}
 
-.caroussel div:nth-child(3){
+.caroussel img:nth-child(3){
 
 	transform:rotateY(90deg) translateZ(540px) scale(.8)
 
 	}
 
-.caroussel div:nth-child(4){
+.caroussel img:nth-child(4){
 
 	transform:rotateY(135deg) translateZ(540px) scale(.8)
 
 	}
 
-.caroussel div:nth-child(5){
+.caroussel img:nth-child(5){
 
 	transform:rotateY(180deg) translateZ(540px) scale(.8)
 
 	}
 
-.caroussel div:nth-child(6){
+.caroussel img:nth-child(6){
 
 	transform:rotateY(225deg) translateZ(540px) scale(.8)
 
 	}
 
-.caroussel div:nth-child(7){
+.caroussel img:nth-child(7){
 
 transform:rotateY(270deg) translateZ(540px) scale(.8)
 
 	}
 
-.caroussel div:nth-child(8){
+.caroussel img:nth-child(8){
 
 transform:rotateY(315deg) translateZ(540px) scale(.8)
 
@@ -1084,7 +1085,7 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
 .copyryte{
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   max-width: 1280px;
   margin: 40px 0;
   overflow-x: auto;
@@ -1094,11 +1095,12 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
 .copy{
 color: white;
 text-align: center;
+padding-top: 20px;
 }
 .copyryte a{
   color: white;
 }
 footer{
   background-color: #0b486b;
-  padding: 15px;
+  padding: 30px;
 }
