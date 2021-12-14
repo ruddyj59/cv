@@ -80,7 +80,7 @@ padding: 20px;
 }
 
 .profilParent{
-  background-image: url("https://cdn.pixabay.com/photo/2020/02/15/14/19/network-4851079_960_720.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2020/02/15/14/19/network-4851079_960_720.webp");
   background-repeat: no-repeat;
   background-size:cover;
   text-align: -webkit-center;
@@ -947,7 +947,7 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
 
     }
     .timeline__event--type .timeline__event__icon {
-      background-image: url("../img/logo-sima.jpg");
+      background-image: url("../img/logo-sima.webp");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
