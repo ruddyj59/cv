@@ -17,9 +17,12 @@ h4 { font-size: 1.5rem; }
 h5 { font-size: 1rem; }
 p{ font-size: 1.8rem;}
 header{
-  background: url("../img/header-background.png") fixed no-repeat;
+  background: url("../img/header-background.webp") fixed no-repeat;
   background-size: cover;
-  background: #0b486b
+  background: #0b486b;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 * {
   box-sizing: border-box;
@@ -92,7 +95,7 @@ justify-content: space-around;
 color: black;
 box-sizing: border-box;
 background-color: #0b486b;
-border-radius: 0px 0px 20px 20px;
+border-radius: 0px 3px 3px 3px;
 }
 .reseaux a{
   padding: 5%;
@@ -105,6 +108,9 @@ padding: 10px;
 font-family: "Roboto-Condensed";
 color:  #0b486b;
 background-color: #f1f1f1;
+}
+.sociaux{
+  display: none;
 }
 .reseaux i{
 color: white;
@@ -238,7 +244,7 @@ color: #8a9898;
 }
 .texte p:first-of-type{
   font-weight: bold;
-    letter-spacing: 0.7rem;
+    letter-spacing: 0.5rem;
     text-align: center;
 }
 span{
@@ -257,6 +263,7 @@ h2 {
   text-align: center;
   font-size: 2rem;
   font-weight: 100;
+  padding: 20px;
 }
 
 .timeline {
@@ -515,7 +522,7 @@ h2 {
 	padding: 2px;
 	border-radius: 50em;
 	border: 2px solid #2d3e50;
-  background-color: black;
+  background-color: #e43;
 }
 .skills-switcher input[type="checkbox"] {
 	position: absolute;
@@ -525,8 +532,8 @@ h2 {
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	width: 90px;
-	height: 40px;
+  width: 105px;
+  height: 45px;
 	line-height: 40px;
 	cursor: pointer;
 	font-size: 1.4rem;
@@ -604,9 +611,9 @@ margin: auto;
   position: relative;
   min-width: 320px;
   height: 440px;
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   margin: 30px;
   transition: 0.5s;
@@ -617,7 +624,7 @@ margin: auto;
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background: #2a2b2f;
+  background: #e43;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -646,18 +653,6 @@ margin: auto;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.9);
   z-index: 1;
-  transition: 0.5s;
-}
-.scrolling-wrapper-flexbox .card .box .content a {
-  position: relative;
-  display: inline-block;
-  padding: 8px 20px;
-  background: #0b486b;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-  margin-top: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
 .scrolling-wrapper-flexbox .card .box .content a:hover {
@@ -766,22 +761,17 @@ transform:rotateY(315deg) translateZ(540px) scale(.8)
 
 .caroussel_diapo input[type=radio] + label {
 cursor: pointer;
-background-color: hsl(203,77%,81%);
+background-color: #0b486b;
 display: inline-block;
-width: 20px;
+width: 30px;
 border-radius: 50%;
-height: 20px
-	}
+height: 30px;
+margin: 5px;
+}
 
 .caroussel_diapo input[type=radio]:checked + label{
-
-	background-color:hsl(203,77%,61%)
-
-	}
-
-
-
-
+background-color:#0b486b;
+}
 /*gauche*/
 .caroussel_diapo #carou_un:checked ~ .contenu_carou .caroussel{
 
@@ -899,7 +889,7 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
       width: 100%;
       margin: 0;
       box-shadow: none;
-      background-image: url(../img/logo-ageval.png);
+      background-image: url(../img/logo-ageval.webp);
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -925,7 +915,7 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
     }
     .timeline__event:nth-child(0n+1) .timeline__event__icon {
       margin: 0;
-      background-image: url("../img/logo-ageval.png");
+      background-image: url("../img/logo-ageval.webp");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -933,21 +923,21 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
     .timeline__event--type2 .timeline__event__icon {
       background: #87bbfe;
       color: #555ac0;
-      background-image: url("../img/logo-log.png");
+      background-image: url("../img/logo-log.webp");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
     }
 
     .timeline__event--type3 .timeline__event__icon {
-      background-image: url("../img/logo-bapaume.png");
+      background-image: url("../img/logo-bapaume.webp");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
     }
 
     .timeline__event--type6 .timeline__event__icon {
-      background-image: url("../img/logo-lidl.png");
+      background-image: url("../img/logo-lidl.webp");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -962,13 +952,13 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
       background-color:#f6a4ec;
     }
     .timeline__event--type4 .timeline__event__icon {
-      background-image: url("../img/logo-pocheco.png");
+      background-image: url("../img/logo-pocheco.webp");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
     }
     .timeline__event--type5 .timeline__event__icon {
-      background-image: url("../img/logo-nicols.png");
+      background-image: url("../img/logo-nicols.webp");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -987,7 +977,7 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
       padding: 13px;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: #e43;
     }
     .nav > .nav-btn > label > span {
       display: block;
@@ -1016,6 +1006,8 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
 
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
+      padding: 20px;
+      text-align: center;
       /* overflow-y: auto; */
     }
     .nav > #nav-check:checked ~ .nav-links:active{
@@ -1024,6 +1016,9 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
   }
   /* format tablette */
   @media screen and (min-width:768px) {
+    .sociaux{
+      display:block;
+    }
     .contenu_carou {
       width: 500px;
       overflow-x: inherit;
@@ -1070,3 +1065,38 @@ transform:rotateY(45deg) translateZ(540px) scale(1)
     height: 200%;
     }
   }
+
+  /* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 5px;
+  background: #e43;
+  width: 0%;
+}
+.copyryte{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  max-width: 1280px;
+  margin: 40px 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: auto;
+}
+.copy{
+color: white;
+text-align: center;
+}
+.copyryte a{
+  color: white;
+}
+footer{
+  background-color: #0b486b;
+  padding: 15px;
+}
